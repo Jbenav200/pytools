@@ -14,7 +14,7 @@ A project containing different data structures in Python and Common Algorithms
 
 ### Resource
 
-A great resource I use to learn advance my python skills is [geeksforgeeks](https://geeksforgeeks.com/).
+A great resource I use to advance my python skills is [geeksforgeeks](https://geeksforgeeks.com/).
 They have awesome articles for:
 
 - [Algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)

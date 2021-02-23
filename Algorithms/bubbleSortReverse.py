@@ -1,4 +1,3 @@
-# Python Program for implementation of
 # Recursive Bubble sort
 class bubbleSort:
 

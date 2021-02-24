@@ -1,6 +1,6 @@
 # pytools
 
-A project containing different data structures in Python and Common Algorithms
+A project containing different data structures and Common Algorithms in Python.
 
 ## Current Data Structures:
 

@@ -1,4 +1,3 @@
-# Content originally learned at GeeksForGeeks
 # Class for a doubly linked list
 
 class LinkedListNode:

@@ -12,6 +12,10 @@ A project containing different data structures and Common Algorithms in Python.
 - Bubble Sort
 - Bubble Sort Reversed
 
+## Use Cases
+
+- A company has customers who bring in annual revenue, you want to list those customers in order of smallest revenue to largest
+
 ### Resource
 
 A great resource I use to advance my python skills is [geeksforgeeks](https://geeksforgeeks.com/).

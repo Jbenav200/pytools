@@ -23,10 +23,11 @@ def bubble_sort(arr):
 
 
 # Testing the sort
-arr = [62, 22, 25, 11, 21, 11, 85]
+""" arr = [62, 22, 25, 11, 21, 11, 85]
 
 bubble_sort(arr)
 
 print("Sorted array:")
 for i in range(len(arr)):
     print("%d" % arr[i], end=" ")
+ """

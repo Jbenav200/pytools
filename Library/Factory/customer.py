@@ -2,6 +2,7 @@ from Algorithms.bubbleSort import bubble_sort
 
 
 class Customer:
+    # Task one: display customers in order of annual revenue.
     # Initialise the customer object
     def __init__(self):
         self.data = {}
@@ -41,6 +42,12 @@ class Customer:
         for i in self.arr:
             self.find_key_by_val(i)
 
+        for i in self.arr:
+            for key, value in self.data.items():
+                if i == value:
+                    self.data[key] = i
+        return self.data
+
     # This function takes a value and checks it against the items in self.data values
     # And if the value is identical to a value in the data values
     # it prints the key and the value together formatteds with an arrow pointing right to left.
@@ -54,3 +61,37 @@ class Customer:
     def bubble_sort(self):
         self.arr = bubble_sort(self.arr)
         return self.arr
+
+    # Task Two: Assign SLAs for customers based on annual revenue
+    # SLA Levels for assignment
+    brnz = 'Bronze'
+    slvr = 'Silver'
+    gld = 'Gold'
+
+    def assign_sla_level(self, data):
+        self.data = data
+        for key in self.data:
+            for i in self.arr:
+                if i == self.data[key]:
+                    if self.data[key] < 100000000:
+                        self.data[key] = self.brnz
+                    elif self.data[key] < 200000000:
+                        self.data[key] = self.slvr
+                    elif self.data[key] >= 200000000:
+                        self.data[key] = self.gld
+                    else:
+                        self.data[key] = self.data[key]
+        return self.data
+
+    # print the ordered data in order of sla
+    def print_data_sla(self, data):
+        self.data = self.sort_by_revenue(data)
+        self.assign_sla_level(self.data)
+        for key in self.data:
+            print(key, "-->", self.data[key])
+
+    # print the data in order of revenu low to high
+    def print_data(self, data):
+        self.data = self.sort_by_revenue(data)
+        for key in self.data:
+            print(key, "-->", self.data[key])

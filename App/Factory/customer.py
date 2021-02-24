@@ -22,15 +22,19 @@ class Customer:
 
     def sort_by_revenue(self, data, arr=[]):
         self.data = self.get_data()
-
+        self.arr = arr
         for key in self.data:
-            arr.append(self.data[key])
+            self.arr.append(self.data[key])
 
-        for i in arr:
-            self.arr = bubble_sort(arr)
+        self.arr = bubble_sort(self.arr)
+        for i in self.arr:
             self.find_key_by_val(i)
 
     def find_key_by_val(self, val):
         for key, value in self.data.items():
             if val == value:
                 print(key, "-->", val)
+
+    def bubble_sort(self):
+        self.arr = bubble_sort(self.arr)
+        return self.arr

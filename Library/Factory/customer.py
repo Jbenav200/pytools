@@ -39,8 +39,6 @@ class Customer:
         # Using bubble sort, I order the array of values, in order of lowest to highest.
         self.arr = bubble_sort(self.arr)
         # For each value in the array I call the find_key_by_val method, passing the value as a parameter.
-        for i in self.arr:
-            self.find_key_by_val(i)
 
         for i in self.arr:
             for key, value in self.data.items():
@@ -50,14 +48,14 @@ class Customer:
 
     # This function takes a value and checks it against the items in self.data values
     # And if the value is identical to a value in the data values
-    # it prints the key and the value together formatteds with an arrow pointing right to left.
+    # it prints the key and the value together formatteds with an arrow pointing right to left.
     def find_key_by_val(self, val):
         for key, value in self.data.items():
             if val == value:
                 print(key, "-->", val)
 
     # This function calls the bubble sort algorithm and returns a sorted array
-    # in place of the array it was given
+    # in place of the array it was given
     def bubble_sort(self):
         self.arr = bubble_sort(self.arr)
         return self.arr
@@ -79,14 +77,11 @@ class Customer:
                         self.data[key] = self.slvr
                     elif self.data[key] >= 200000000:
                         self.data[key] = self.gld
-                    else:
-                        self.data[key] = self.data[key]
         return self.data
 
     # print the ordered data in order of sla
-    def print_data_sla(self, data):
-        self.data = self.sort_by_revenue(data)
-        self.assign_sla_level(self.data)
+    def print_data_sla(self):
+        self.assign_sla_level(self.sort_by_revenue(self.data))
         for key in self.data:
             print(key, "-->", self.data[key])
 

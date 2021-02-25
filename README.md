@@ -17,7 +17,7 @@ A project containing different data structures and Common Algorithms in Python.
 - A company has customers who bring in annual revenue, you want to list those customers in order of smallest revenue to largest
 - The company also wants to assign different SLA levels, Bronze, Silver and Gold.
 
-### Resource
+### Resources
 
 A great resource I use to advance my python skills is [geeksforgeeks](https://geeksforgeeks.com/).
 They have awesome articles for:

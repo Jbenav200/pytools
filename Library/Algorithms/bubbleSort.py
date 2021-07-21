@@ -1,4 +1,3 @@
-# Content originally learned at GeeksForGeeks
 # A python method for an optimized Bubble Sort Algorithm
 
 def bubble_sort(arr):

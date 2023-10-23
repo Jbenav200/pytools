@@ -7,7 +7,7 @@ class LinkedListNode:
         self.nextNode = None
 
 
-class doublyLinkedList:
+class DoublyLinkedList:
     def __init__(self):
         self.head = None
 

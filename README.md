@@ -4,7 +4,7 @@ A project containing different data structures and Common Algorithms in Python.
 
 ## Current Data Structures:
 
-- Doubly Linked List
+- Doubly Linked List - currently redoing
 - Binary Search Tree
 
 ## Current Algorithms

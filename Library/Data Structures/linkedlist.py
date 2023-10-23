@@ -1,10 +1,10 @@
 # Class for a doubly linked list
 
 class LinkedListNode:
-    def __init__(self, data):
+    def __init__(self, data=None, previous=None, nextNode=None):
         self.data = data
-        self.previousNode = None
-        self.nextNode = None
+        self.previousNode = previous
+        self.nextNode = nextNode
 
 
 class DoublyLinkedList:
@@ -19,14 +19,3 @@ class DoublyLinkedList:
             while n is not None:
                 print(n.data, "-->", end=" ")
                 n = n.nextNode
-
-    def print_linked_list_reverse(self):
-        if self.head is None:
-            print("Linked List is Empty")
-        else:
-            n = self.head
-            while n.nextNode is not None:
-                n = n.nextNode
-            while n is not None:
-                print(n.data, "-->", end=" ")
-                n = n.previousNode
